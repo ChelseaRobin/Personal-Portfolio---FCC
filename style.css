@@ -1,0 +1,101 @@
+:root {
+  --color-grey: #EDEDED;
+  --color-gold: #DCC425;
+}
+
+body {
+  color: black;
+  background-color: var(--color-grey);
+  background-image: linear-gradient(
+      100deg,
+      rgba(222, 236, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ), url('https://blog.archive.org/wp-content/uploads/2016/02/OpenBooks.jpg');
+  text-align: center;
+  font-size: 25px; 
+  margin: 30px 30px 30px 30px;
+}
+
+a:hover {
+  background-color: orange;
+  opacity: 0.4;
+  border: none;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+p{
+  text-decoration-color: orange;
+  text-decoration-line: underline;
+}
+
+footer{
+  font-size: 10px;
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+
+img{
+  border: 2px outset; color: silver;
+  width: 45%;
+  display: in-line;
+  float: center;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  margin-bottom: 0px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#welcome-section{
+  margin-top: 80px;
+  height: 55vh;
+}
+
+#projects{
+ margin-top: -200px;
+}
+
+header, #navbar{
+  background-color: rgba(0, 0, 255, .2);
+  top: 20%;
+  width: 100%;
+}
+#navbar{
+  position: flex;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
